@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 :root{
@@ -230,7 +230,17 @@ footer{background:var(--charcoal);color:rgba(255,253,249,.55);padding:3.5rem 5.5
 .reveal.visible{opacity:1;transform:none}
 .reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}
 
-</head>
+@media(max-width:900px){
+  nav{padding:1rem 1.5rem}.nav-links{display:none}.hamburger{display:flex}.mobile-menu{display:flex}
+  .hero{grid-template-columns:1fr;min-height:auto}.hero-left{padding:6rem 1.5rem 3rem}.hero-right{height:70vw}
+  .about-grid,.contact-grid,.footer-grid{grid-template-columns:1fr}.about-accent{display:none}
+  .services-grid,.press-grid{grid-template-columns:1fr}.services-top{flex-direction:column}
+  .mission-section{grid-template-columns:1fr}.mission-img{padding:3rem 2rem}.mission-stats{grid-template-columns:repeat(2,1fr);padding:3rem 2rem}
+  .section{padding:4rem 1.5rem}.contact-form{padding:1.5rem}.form-2col{grid-template-columns:1fr}
+  footer{padding:3rem 1.5rem 2rem}.footer-grid{grid-template-columns:1fr;gap:2.5rem}
+  .listings-grid,.listings-grid.two-col{grid-template-columns:1fr}
+}
+</style>
 </head>
 <body>
 
